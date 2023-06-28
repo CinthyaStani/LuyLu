@@ -10,3 +10,29 @@ body{
 .centrar{
     text-align: center;
 }
+ 
+.navegation ul {
+    list-style-type: none;
+    text-align:;
+}
+.navegation li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+.navegation li a{
+    padding: 2px 7px 2px 7px;
+    color: aliceblue;
+    background-color: aqua;
+    border: 1px solid#ccc;
+    text-decoration: none;
+}
+.navegation {
+    background-color: aqua;
+    color: aliceblue;
+}
+
+.lu1{
+    height: 500px;
+    width: 500px;
+}
