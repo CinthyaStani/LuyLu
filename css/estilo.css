@@ -3,12 +3,10 @@ h1 {
 }
 
 body{
-    background-image: url("../img/png-transparent-pink-magenta-pattern-pink-background-texture-point-pink-background.png");
+    background-image: url(../img/png-transparent-pink-magenta-pattern-pink-background-texture-point-pink-background.png);
+    background-size: cover;
 }
 
 .centrar{
     text-align: center;
 }
-
-
-
