@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     color:black;
 }
@@ -13,26 +18,33 @@ body{
  
 .navegation ul {
     list-style-type: none;
-    text-align:;
+    text-align:center;
+    margin-left: 650px;
 }
 .navegation li{
     display: inline;
     text-align: center;
-    margin: 0 10px 0 0;
+    margin: 10px 10px 10px 10px;
+
 }
 .navegation li a{
     padding: 2px 7px 2px 7px;
     color: aliceblue;
-    background-color: aqua;
-    border: 1px solid#ccc;
+    background-color: rgb(204, 44, 191);
+    border: 1px solid #ccc;
     text-decoration: none;
 }
 .navegation {
-    background-color: aqua;
+    background-color: rgb(204, 44, 191);
     color: aliceblue;
 }
 
 .lu1{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
+    border: 2px black solid;
+    margin-left: 250px;
+}
+.lu2 {
+    margin-right: 250px;
 }
