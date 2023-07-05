@@ -45,6 +45,13 @@ body{
     border: 2px black solid;
     margin-left: 250px;
 }
-.lu2 {
-    margin-right: 250px;
+
+footer{
+    background-color: antiquewhite;
+    height: 10vh;
+}
+
+nav{
+    height: 10vh;
+    background-color:antiquewhite;
 }
