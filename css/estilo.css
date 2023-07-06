@@ -16,28 +16,17 @@ body{
     text-align: center;
 }
  
-.navegation ul {
-    list-style-type: none;
-    text-align:center;
-    margin-left: 650px;
-}
-.navegation li{
-    display: inline;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
 
+header li{
+    text-align: center;
+    display:inline
+    
 }
-.navegation li a{
-    padding: 2px 7px 2px 7px;
-    color: aliceblue;
-    background-color: rgb(204, 44, 191);
-    border: 1px solid #ccc;
-    text-decoration: none;
+.luylu{
+    background-color: palevioletred;
 }
-.navegation {
-    background-color: rgb(204, 44, 191);
-    color: aliceblue;
-}
+
+
 
 .lu1{
     height: 300px;
@@ -48,10 +37,15 @@ body{
 
 footer{
     background-color: antiquewhite;
-    height: 10vh;
+    height: 5vh;
 }
 
 nav{
-    height: 10vh;
+    height: 5vh;
     background-color:antiquewhite;
+}
+
+.whatsap, .instagram{
+    height: 25px;
+    width: 25px;
 }
