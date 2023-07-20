@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuyLu</title>
-    <link rel="stylesheet" href="css/estilo.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    
     <!-- fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
    <header>
-     <nav>
-      <a href="./index.html"><h1 class="luylu">LuyLu</h1></a>
-         
-        <ul>
-            <li class="index"><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/arbol.html">arbol</a></li
-                >
-            <li><a href="./pages/nosotros.html">nosotros</a></li>
-            <li><a href="./pages/galeria.html">galeria</a></li>
-            <li><a href="./pages/contactos.html">contacto</a></li>
-        </ul>
-       </nav>
+    <nav class="navbar navbar-expand-lg color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <h1 class="h1">LuyLu</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav barra">
+            <a class="nav-link active fondito" aria-current="page" href="./index.html">Inicio</a>
+            <a class="nav-link fondito" href="./pages/arbol.html">Arbol genealogico</a>
+            <a class="nav-link fondito" href="./pages/nosotros.html">Nosotros</a>
+            <a class="nav-link fondito" href="./pages/galeria.html">Galeria</a>
+            <a class="nav-link fondito" href="./pages/contactos.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
    </header> 
 
  
    <main>
+ 
+    <div class="card text-bg-dark">
+      <img src="./img/principal.JPG" class="card-img principal" alt="principal">
+      <div class="card-img-overlay  laPrincipal">
+        <h5 class="card-title">Nuestra vida es el conjunto de etapas</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, atque doloremque! Aspernatur totam dolores explicabo, quod maxime rem ut libero, repellendus repudiandae consequuntur reprehenderit animi eum odit porro sequi nulla.</p>
+        <p class="card-text"><small>Dejame que te cuente nuestra historia</small></p>
+      </div>
+    </div>
+
+
+
+
+
     <img src="../LuyLu/img/heart eyes (1).png" alt="LU" class="lu1">
    <img src="../LuyLu/img/heart eyes.png" alt="LU" class="lu1">
 
@@ -49,6 +74,7 @@
      </nav>
    </footer>
    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
  
 </body>
