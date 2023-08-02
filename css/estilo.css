@@ -41,14 +41,32 @@ body{
 .lu1{
     height: 300px;
     width: 300px;
-    border: 2px black solid;
-    border-radius: 2px;
-    margin-left: 250px;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
-main{
-   
+.emojis{
+    background-color: #F776AA;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 222, 200);
+}
+
+.nos{
+    display: flex;
+    align-items: center;
+}
+
+.intro{
+    text-align: center;
+    background-color: rgb(231, 222, 200);
 }
 
 footer{
@@ -66,17 +84,21 @@ nav{
     width: 25px;
 }
 
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .perfect{
     width: 500px;
-    height: 350px;
-    margin-left: 450px;
-    margin-top: 50px;
+    height: 350px;    
 }
 
 .poema{
     font-family: 'Ysabeau Infant', sans-serif;
     margin: 10px 40px;
-    background-color: rgba(250, 235, 215, 0.5);
+    background-color: rgb(231, 222, 200);
     border-radius: 15px;
     padding: 20px;
 }
@@ -94,6 +116,7 @@ nav{
     display: flex;
     justify-content: end;
     width: 100%;
+    background-color: palevioletred;
 }
 
 .principal{
@@ -102,18 +125,107 @@ nav{
     margin-top: 10px;
 }
 
-.laPrincipal{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    /* justify-content: space-around; */
-}
+
 
 /* contacto */
 
 .formulario{
     text-align: center;
     width: 350px;
-    margin: 50px 500px;
+    display: flex;
     background-color: rgba(250, 235, 215, 0.5);
+}
+
+/* galeria */
+
+.fotos{
+    height: 300px;
+    width: 300px;
+}
+
+.gridGaleria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "a b c"
+    "a b c"
+    "d e f"
+    "d g g"
+    "h i j"
+    ;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+}
+
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+
+.f{
+    grid-area: f;
+}
+
+.g{
+    grid-area: g;
+}
+
+.h{
+    grid-area: h;
+}
+
+.i{
+    grid-area: i;
+}
+
+.j{
+    grid-area: j;
+}
+
+@media (max-width: 368px) {
+    .gridGaleria{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i"
+        "j"
+        ;
+        
+    }
+
+    .perfect{
+        width: 300px;
+        height: 300px;
+    }
+
+    .nos{
+        flex-direction: column;
+    }
+
+    .lu1{
+        height: 150px;
+        width: 150px;
+    }
 }
