@@ -1,0 +1,340 @@
+$colorPrincipal: palevioletred;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* inicio */
+ 
+h1 {
+    display: inline;
+   color: $colorPrincipal;
+   margin: 3px;
+   font-family: 'Ysabeau Infant', sans-serif;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fuente{
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+body{
+    background-image: url(../img/png-transparent-pink-magenta-pattern-pink-background-texture-point-pink-background.png);
+    background-size: cover;
+}
+ 
+.color{
+    background-color: $colorPrincipal;
+}
+
+
+.index{
+    margin-left: 760px;
+}
+
+.lu1{
+
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+}
+}
+
+.emojis{
+    background-color: #F776AA;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+     .presentacion{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(231, 222, 200);
+    }
+
+    .nos{
+        display: flex;
+        align-items: center;
+        margin: 40px;
+    }
+}
+
+
+
+.intro{
+    text-align: center;
+    background-color: #F776AA;
+    margin: 40px;
+    padding: 20px;
+    border: 3x black solid;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: antiquewhite;
+    height: 5vh;
+
+    nav{
+        height: 5vh;
+        background-color:antiquewhite;
+
+        .whatsap, .instagram{
+            height: 25px;
+            width: 25px;
+        }
+    }
+}
+
+
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .perfect{
+        width: 500px;
+        height: 350px;    
+    }
+    
+    
+}
+
+.letraDe{
+    display: flex;
+    justify-content: center;
+    font-family: 'Ysabeau Infant', sans-serif;
+    margin: 10px 40px;
+    background-color: rgb(231, 222, 200);
+    border-radius: 15px;
+    padding: 20px;
+    
+    .titulo{
+        text-align: center;
+    }
+    .letra{
+        margin: 10px;
+        border-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+ 
+.fondito{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #F776AA;
+    margin: 10px;
+
+}
+
+.barra{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    background-color: $colorPrincipal;
+}
+
+.principal{
+    height: 600px;
+    width: 1260px;
+    margin-top: 10px;
+}
+
+
+
+/* contacto */
+
+.formulario{
+    text-align: center;
+    // width: 350px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    background-color: rgba(250, 235, 215, 0.5);
+
+    .contactanos{
+        margin: 5px;
+    }
+}
+
+/* galeria */
+
+
+.gridGaleria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i"
+    ;
+    justify-content: stretch;
+    align-items: stretch;
+    
+    img{
+        max-width: 300px;
+        padding: 1rem;
+        border: 3px palevioletred solid;
+        border-radius: 8px;
+        margin: 3px;
+        &:hover{
+            transition: all ease-in-out 1s;
+            transform: scale(1.5);
+
+        }
+
+        .a{
+            grid-area: a;
+        }
+        .b{
+            grid-area: b;
+        }
+        .c{
+            grid-area: c;
+        }
+        .d{
+            grid-area: d;
+        }
+        .e{
+            grid-area: e;
+        }
+        .f{
+            grid-area: f;
+        }
+        .g{
+            grid-area: g;
+        }
+        .h{
+            grid-area: h;
+        }
+        .i{
+            grid-area: i;
+        }
+
+    }
+}
+
+// nosotros
+
+.conocer{
+    display: flex;
+    flex-direction: row;
+
+
+}
+.intron{
+    text-align: center;
+    background-color: #F776AA;
+    margin: 40px;
+    padding: 20px;
+    border: 3x black solid;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+    @media (max-width: 420px){
+        .emojis{
+                .nos{
+                    display: flex;
+                    align-items: center;
+                    margin: 40px;
+                    flex-direction: column;
+                }
+            }
+
+        .video{
+            .perfect{
+                width: 300px;
+                height: 300px;
+                }
+
+            
+            
+            .lu1{
+                height: 150px;
+                width: 150px;
+                } 
+            } 
+          .gridGaleria{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+            "h"
+            "i"
+            ;
+            justify-items: center;
+          }
+          .a{
+            grid-area: a;
+          }
+          .b{
+            grid-area: b;
+          }
+          .c{
+            grid-area: c;
+          }
+          .d{
+            grid-area: d;
+          }
+          .e{
+            grid-area: e;
+          }
+          .f{
+            grid-area: f;
+          }
+          .g{
+            grid-area: g;
+          }
+          .h{
+            grid-area: h;
+          }
+          .i{
+            grid-area: i;
+          }
+          img{
+          max-width :250px;
+          max-height: 150px;
+          }
+          .letraDe{
+            flex-direction: column;
+          }
+ }

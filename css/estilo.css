@@ -1,231 +1,279 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* inicio */
- 
 h1 {
-    display: inline;
-   color: palevioletred;
-   margin: 3px;
-   font-family: 'Ysabeau Infant', sans-serif;
-    border: 3px black solid;
-    border-radius: 10px;
-    padding: 3px;
+  display: inline;
+  color: palevioletred;
+  margin: 3px;
+  font-family: "Ysabeau Infant", sans-serif;
+  border: 3px black solid;
+  border-radius: 10px;
+  padding: 3px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.fuente{
-    color: black;
-    text-align: center;
+.fuente {
+  color: black;
+  text-align: center;
+  margin-top: 15px;
 }
 
-body{
-    background-image: url(../img/png-transparent-pink-magenta-pattern-pink-background-texture-point-pink-background.png);
-    background-size: cover;
-}
- 
-.color{
-    background-color: palevioletred;
+body {
+  background-image: url(../img/png-transparent-pink-magenta-pattern-pink-background-texture-point-pink-background.png);
+  background-size: cover;
 }
 
-
-.index{
-    margin-left: 760px;
+.color {
+  background-color: palevioletred;
 }
 
-.lu1{
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+.index {
+  margin-left: 760px;
 }
 
-.emojis{
-    background-color: #F776AA;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.lu1 {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.presentacion{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(231, 222, 200);
+.emojis {
+  background-color: #F776AA;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.emojis .presentacion {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(231, 222, 200);
+}
+.emojis .nos {
+  display: flex;
+  align-items: center;
+  margin: 40px;
 }
 
-.nos{
-    display: flex;
-    align-items: center;
+.intro {
+  text-align: center;
+  background-color: #F776AA;
+  margin: 40px;
+  padding: 20px;
+  border: 3x black solid;
+  border-radius: 10px;
 }
 
-.intro{
-    text-align: center;
-    background-color: rgb(231, 222, 200);
+footer {
+  background-color: antiquewhite;
+  height: 5vh;
+}
+footer nav {
+  height: 5vh;
+  background-color: antiquewhite;
+}
+footer nav .whatsap, footer nav .instagram {
+  height: 25px;
+  width: 25px;
 }
 
-footer{
-    background-color: antiquewhite;
-    height: 10vh;
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video .perfect {
+  width: 500px;
+  height: 350px;
 }
 
-nav{
-    height: 10vh;
-    background-color:antiquewhite;
+.letraDe {
+  display: flex;
+  justify-content: center;
+  font-family: "Ysabeau Infant", sans-serif;
+  margin: 10px 40px;
+  background-color: rgb(231, 222, 200);
+  border-radius: 15px;
+  padding: 20px;
+}
+.letraDe .titulo {
+  text-align: center;
+}
+.letraDe .letra {
+  margin: 10px;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
-.whatsap, .instagram{
-    height: 25px;
-    width: 25px;
+.fondito {
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #F776AA;
+  margin: 10px;
 }
 
-.video{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.barra {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-color: palevioletred;
 }
 
-.perfect{
-    width: 500px;
-    height: 350px;    
+.principal {
+  height: 600px;
+  width: 1260px;
+  margin-top: 10px;
 }
-
-.poema{
-    font-family: 'Ysabeau Infant', sans-serif;
-    margin: 10px 40px;
-    background-color: rgb(231, 222, 200);
-    border-radius: 15px;
-    padding: 20px;
-}
- 
-.fondito{
-    border: 2px black solid;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #F776AA;
-    margin: 10px;
-
-}
-
-.barra{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    background-color: palevioletred;
-}
-
-.principal{
-    height: 600px;
-    width: 1260px;
-    margin-top: 10px;
-}
-
-
 
 /* contacto */
-
-.formulario{
-    text-align: center;
-    width: 350px;
-    display: flex;
-    background-color: rgba(250, 235, 215, 0.5);
+.formulario {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(250, 235, 215, 0.5);
+}
+.formulario .contactanos {
+  margin: 5px;
 }
 
 /* galeria */
+.gridGaleria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "a b c" "d e f" "g h i";
+  justify-content: stretch;
+  align-items: stretch;
+}
+.gridGaleria img {
+  max-width: 300px;
+  padding: 1rem;
+  border: 3px palevioletred solid;
+  border-radius: 8px;
+  margin: 3px;
+}
+.gridGaleria img:hover {
+  transition: all ease-in-out 1s;
+  transform: scale(1.5);
+}
+.gridGaleria img .a {
+  grid-area: a;
+}
+.gridGaleria img .b {
+  grid-area: b;
+}
+.gridGaleria img .c {
+  grid-area: c;
+}
+.gridGaleria img .d {
+  grid-area: d;
+}
+.gridGaleria img .e {
+  grid-area: e;
+}
+.gridGaleria img .f {
+  grid-area: f;
+}
+.gridGaleria img .g {
+  grid-area: g;
+}
+.gridGaleria img .h {
+  grid-area: h;
+}
+.gridGaleria img .i {
+  grid-area: i;
+}
 
-.fotos{
-    height: 300px;
+.conocer {
+  display: flex;
+  flex-direction: row;
+}
+
+.intron {
+  text-align: center;
+  background-color: #F776AA;
+  margin: 40px;
+  padding: 20px;
+  border: 3x black solid;
+  border-radius: 10px;
+}
+
+@media (max-width: 420px) {
+  .emojis .nos {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    flex-direction: column;
+  }
+  .video .perfect {
     width: 300px;
-}
-
-.gridGaleria{
+    height: 300px;
+  }
+  .video .lu1 {
+    height: 150px;
+    width: 150px;
+  }
+  .gridGaleria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "a b c"
-    "a b c"
-    "d e f"
-    "d g g"
-    "h i j"
-    ;
-}
-
-.a{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i";
+    justify-items: center;
+  }
+  .a {
     grid-area: a;
-}
-
-.b{
+  }
+  .b {
     grid-area: b;
-}
-
-.c{
+  }
+  .c {
     grid-area: c;
-}
-
-.d{
+  }
+  .d {
     grid-area: d;
-}
-
-.e{
+  }
+  .e {
     grid-area: e;
-}
-
-.f{
+  }
+  .f {
     grid-area: f;
-}
-
-.g{
+  }
+  .g {
     grid-area: g;
-}
-
-.h{
+  }
+  .h {
     grid-area: h;
-}
-
-.i{
+  }
+  .i {
     grid-area: i;
+  }
+  img {
+    max-width: 250px;
+    max-height: 150px;
+  }
+  .letraDe {
+    flex-direction: column;
+  }
 }
 
-.j{
-    grid-area: j;
-}
-
-@media (max-width: 368px) {
-    .gridGaleria{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        grid-template-areas: 
-        "a"
-        "b"
-        "c"
-        "d"
-        "e"
-        "f"
-        "g"
-        "h"
-        "i"
-        "j"
-        ;
-        
-    }
-
-    .perfect{
-        width: 300px;
-        height: 300px;
-    }
-
-    .nos{
-        flex-direction: column;
-    }
-
-    .lu1{
-        height: 150px;
-        width: 150px;
-    }
-}
+/*# sourceMappingURL=estilo.css.map */
