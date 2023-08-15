@@ -206,7 +206,6 @@ footer{
         &:hover{
             transition: all ease-in-out 1s;
             transform: scale(1.5);
-
         }
 
         .a{
@@ -236,7 +235,6 @@ footer{
         .i{
             grid-area: i;
         }
-
     }
 }
 
@@ -245,9 +243,8 @@ footer{
 .conocer{
     display: flex;
     flex-direction: row;
-
-
 }
+
 .intron{
     text-align: center;
     background-color: #F776AA;
@@ -256,12 +253,6 @@ footer{
     border: 3x black solid;
     border-radius: 10px;
 }
-
-
-
-
-
-
 
     @media (max-width: 420px){
         .emojis{
@@ -278,15 +269,13 @@ footer{
                 width: 300px;
                 height: 300px;
                 }
-
-            
             
             .lu1{
                 height: 150px;
                 width: 150px;
                 } 
             } 
-          .gridGaleria{
+        .gridGaleria{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(9, 1fr);
@@ -333,6 +322,7 @@ footer{
           img{
           max-width :250px;
           max-height: 150px;
+          transform: scale(1.25);
           }
           .letraDe{
             flex-direction: column;

@@ -270,6 +270,7 @@ footer nav .whatsap, footer nav .instagram {
   img {
     max-width: 250px;
     max-height: 150px;
+    transform: scale(1.25);
   }
   .letraDe {
     flex-direction: column;
