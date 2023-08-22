@@ -1,0 +1,27 @@
+$colorPrincipal: palevioletred;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fuente{
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+body{
+    background-image: url(../img/png-transparent-pink-magenta-pattern-pink-background-texture-point-pink-background.png);
+    background-size: cover;
+}
+
+@mixin mobile {
+    @media (max-width: 420px){
+        @content 
+    }
+}

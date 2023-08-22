@@ -1,0 +1,74 @@
+@media (max-width: 420px){
+    .emojis{
+            .nos{
+                display: flex;
+                align-items: center;
+                margin: 40px;
+                flex-direction: column;
+            }
+        }
+
+    .video{
+        .perfect{
+            width: 300px;
+            height: 300px;
+            }
+        
+        .lu1{
+            height: 150px;
+            width: 150px;
+            } 
+        } 
+    .gridGaleria{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i"
+        ;
+        justify-items: center;
+      }
+      .a{
+        grid-area: a;
+      }
+      .b{
+        grid-area: b;
+      }
+      .c{
+        grid-area: c;
+      }
+      .d{
+        grid-area: d;
+      }
+      .e{
+        grid-area: e;
+      }
+      .f{
+        grid-area: f;
+      }
+      .g{
+        grid-area: g;
+      }
+      .h{
+        grid-area: h;
+      }
+      .i{
+        grid-area: i;
+      }
+      img{
+      max-width :250px;
+      max-height: 150px;
+      transform: scale(1.25);
+      }
+      .letraDe{
+        flex-direction: column;
+      }
+}

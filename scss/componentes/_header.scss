@@ -1,0 +1,29 @@
+h1 {
+    display: inline;
+   color: $colorPrincipal;
+   margin: 3px;
+   font-family: 'Ysabeau Infant', sans-serif;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.color{
+    background-color: $colorPrincipal;
+}
+
+.fondito{
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #F776AA;
+    margin: 10px;
+
+}
+
+.barra{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    background-color: $colorPrincipal;
+}
