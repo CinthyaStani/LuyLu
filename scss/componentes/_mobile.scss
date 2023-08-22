@@ -4,7 +4,6 @@
                 display: flex;
                 align-items: center;
                 margin: 40px;
-                flex-direction: column;
             }
         }
 
@@ -17,6 +16,7 @@
         .lu1{
             height: 150px;
             width: 150px;
+            margin-right: 20px;
             } 
         } 
     .gridGaleria{
@@ -64,7 +64,7 @@
         grid-area: i;
       }
       img{
-      max-width :250px;
+      max-width :150px;
       max-height: 150px;
       transform: scale(1.25);
       }

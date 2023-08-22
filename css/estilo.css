@@ -3,17 +3,6 @@
   padding: 0;
 }
 
-/* inicio */
-h1 {
-  display: inline;
-  color: palevioletred;
-  margin: 3px;
-  font-family: "Ysabeau Infant", sans-serif;
-  border: 3px black solid;
-  border-radius: 10px;
-  padding: 3px;
-}
-
 a {
   text-decoration: none;
 }
@@ -29,8 +18,46 @@ body {
   background-size: cover;
 }
 
+h1 {
+  display: inline;
+  color: palevioletred;
+  margin: 3px;
+  font-family: "Ysabeau Infant", sans-serif;
+  border: 3px black solid;
+  border-radius: 10px;
+  padding: 3px;
+}
+
 .color {
   background-color: palevioletred;
+}
+
+.fondito {
+  border: 2px black solid;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #F776AA;
+  margin: 10px;
+}
+
+.barra {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background-color: palevioletred;
+}
+
+footer {
+  background-color: antiquewhite;
+  height: 5vh;
+}
+footer nav {
+  height: 5vh;
+  background-color: antiquewhite;
+}
+footer nav .whatsap, footer nav .instagram {
+  height: 25px;
+  width: 25px;
 }
 
 .index {
@@ -81,19 +108,6 @@ body {
   border-radius: 10px;
 }
 
-footer {
-  background-color: antiquewhite;
-  height: 5vh;
-}
-footer nav {
-  height: 5vh;
-  background-color: antiquewhite;
-}
-footer nav .whatsap, footer nav .instagram {
-  height: 25px;
-  width: 25px;
-}
-
 .video {
   display: flex;
   flex-direction: column;
@@ -124,39 +138,44 @@ footer nav .whatsap, footer nav .instagram {
   justify-content: start;
 }
 
-.fondito {
-  border: 2px black solid;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #F776AA;
-  margin: 10px;
-}
-
-.barra {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-  background-color: palevioletred;
-}
-
 .principal {
   height: 600px;
   width: 1260px;
   margin-top: 10px;
 }
 
-/* contacto */
-.formulario {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(250, 235, 215, 0.5);
+@media (max-width: 420px) {
+  .emojis .nos {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+  }
+  .video .perfect {
+    width: 300px;
+    height: 300px;
+  }
+  .video .lu1 {
+    height: 150px;
+    width: 150px;
+  }
+  .letraDe {
+    flex-direction: column;
+  }
 }
-.formulario .contactanos {
-  margin: 5px;
+.conocer {
+  display: flex;
+  flex-direction: row;
 }
 
-/* galeria */
+.intron {
+  text-align: center;
+  background-color: #F776AA;
+  margin: 40px;
+  padding: 20px;
+  border: 3x black solid;
+  border-radius: 10px;
+}
+
 .gridGaleria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -170,7 +189,7 @@ footer nav .whatsap, footer nav .instagram {
   padding: 1rem;
   border: 3px palevioletred solid;
   border-radius: 8px;
-  margin: 3px;
+  margin: 20px;
 }
 .gridGaleria img:hover {
   transition: all ease-in-out 1s;
@@ -204,35 +223,7 @@ footer nav .whatsap, footer nav .instagram {
   grid-area: i;
 }
 
-.conocer {
-  display: flex;
-  flex-direction: row;
-}
-
-.intron {
-  text-align: center;
-  background-color: #F776AA;
-  margin: 40px;
-  padding: 20px;
-  border: 3x black solid;
-  border-radius: 10px;
-}
-
 @media (max-width: 420px) {
-  .emojis .nos {
-    display: flex;
-    align-items: center;
-    margin: 40px;
-    flex-direction: column;
-  }
-  .video .perfect {
-    width: 300px;
-    height: 300px;
-  }
-  .video .lu1 {
-    height: 150px;
-    width: 150px;
-  }
   .gridGaleria {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -268,13 +259,19 @@ footer nav .whatsap, footer nav .instagram {
     grid-area: i;
   }
   img {
-    max-width: 250px;
+    max-width: 150px;
     max-height: 150px;
     transform: scale(1.25);
   }
-  .letraDe {
-    flex-direction: column;
-  }
+}
+.formulario {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(250, 235, 215, 0.5);
+}
+.formulario .contactanos {
+  margin: 5px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
