@@ -144,7 +144,7 @@ footer nav .whatsap, footer nav .instagram {
   margin-top: 10px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
   .emojis .nos {
     display: flex;
     align-items: center;
@@ -223,6 +223,25 @@ footer nav .whatsap, footer nav .instagram {
   grid-area: i;
 }
 
+@media (max-width: 1200px) {
+  .gridGaleria{
+    grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      grid-template-areas: 
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      ;
+      justify-items: center;
+  }
+}
+
 @media (max-width: 420px) {
   .gridGaleria {
     display: grid;
@@ -269,6 +288,13 @@ footer nav .whatsap, footer nav .instagram {
   display: flex;
   justify-content: center;
   background-color: rgba(250, 235, 215, 0.5);
+}
+.formulario .flex{
+  display: flex;
+  flex-direction: column;
+}
+.formulario .flex input {
+  margin: 25px 0;
 }
 .formulario .contactanos {
   margin: 5px;

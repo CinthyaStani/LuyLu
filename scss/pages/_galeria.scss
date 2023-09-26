@@ -51,6 +51,25 @@
     }
 }
 
+@media (max-width: 1200px){
+    .gridGaleria{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i"
+        ;
+        justify-items: center;
+    }
+}
+
 @include mobile {
     .gridGaleria{
         display: grid;
